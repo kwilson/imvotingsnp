@@ -1,0 +1,40 @@
+﻿html,body,#map {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: #eee;
+    opacity: 0;
+    -moz-transition: opacity linear 1s;
+    -o-transition: opacity linear 1s;
+    -webkit-transition: opacity linear 1s;
+    transition: opacity linear 1s;
+    overflow: hidden;
+
+    &.loaded {
+        opacity: 1;
+    }
+}
+
+#content {
+
+    > form {
+        padding: 2em;
+        position: absolute;
+        background: #FFF482;
+        border: solid 5px #13136F;
+        border-radius: 1em;
+        width: 50%;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        transition: position ease-in-out .25s, 
+                    opacity ease-in-out .5s,
+                    transform ease-in-out 1s;
+        opacity: 0;
+        left: 25%;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}

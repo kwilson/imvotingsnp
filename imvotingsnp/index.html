@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>I'm Voting SNP!</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/screen.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="map">
+
+    </div>
+
+    <div id="content">
+        <form action="#">
+            <div class="form-group">
+                <label for="address">Find your address and add yourself to the map</label>
+                <div class="input-group">
+                    <input id="address" type="text" class="form-control" placeholder="Enter your address...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit">Search</button>
+                    </span>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="app/main.js"></script>
+</body>
+</html>
